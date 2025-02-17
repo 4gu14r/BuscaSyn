@@ -1,0 +1,129 @@
+[
+    {
+      "id": 1,
+      "titulo": "Vazamento em casa",
+      "descricao": "Identificado vazamento no banheiro da residência.",
+      "categoria": "Manutenção",
+      "local": "Casa"
+    },
+    {
+      "id": 2,
+      "titulo": "Problema no apartamento",
+      "descricao": "O ar-condicionado do apartamento não está funcionando.",
+      "categoria": "Eletrônica",
+      "local": "Apartamento"
+    },
+    {
+      "id": 3,
+      "titulo": "Kitnet sem energia",
+      "descricao": "Falta de energia elétrica na kitnet do centro.",
+      "categoria": "Serviço Público",
+      "local": "Kitnet"
+    },
+    {
+      "id": 4,
+      "titulo": "Infiltração no condomínio",
+      "descricao": "Múltiplos relatos de infiltrações no prédio do condomínio.",
+      "categoria": "Infraestrutura",
+      "local": "Condomínio"
+    },
+    {
+      "id": 5,
+      "titulo": "Reforma no lar",
+      "descricao": "Solicitação de reforma geral no imóvel.",
+      "categoria": "Reforma",
+      "local": "Lar"
+    },
+    {
+      "id": 6,
+      "titulo": "Barraco com problemas estruturais",
+      "descricao": "Estrutura do barraco apresenta riscos de desabamento.",
+      "categoria": "Emergência",
+      "local": "Barraco"
+    },
+    {
+      "id": 7,
+      "titulo": "Apartamento com infiltração",
+      "descricao": "Problemas de infiltração na parede do apartamento.",
+      "categoria": "Manutenção",
+      "local": "Apartamento"
+    },
+    {
+      "id": 8,
+      "titulo": "Condomínio sem segurança",
+      "descricao": "Falta de monitoramento e segurança no condomínio.",
+      "categoria": "Segurança",
+      "local": "Condomínio"
+    },
+    {
+      "id": 9,
+      "titulo": "Casa sem água quente",
+      "descricao": "Problemas no sistema de aquecimento de água na casa.",
+      "categoria": "Serviço Público",
+      "local": "Casa"
+    },
+    {
+      "id": 10,
+      "titulo": "Kitnet com problemas elétricos",
+      "descricao": "Instalação elétrica da kitnet apresenta falhas intermitentes.",
+      "categoria": "Eletricidade",
+      "local": "Kitnet"
+    },
+    {
+      "id": 11,
+      "titulo": "Revisão do carro",
+      "descricao": "Necessária revisão no motor e troca de óleo.",
+      "categoria": "Manutenção Veicular",
+      "local": "Oficina"
+    },
+    {
+      "id": 12,
+      "titulo": "Problema na motocicleta",
+      "descricao": "Falha no sistema de ignição da moto.",
+      "categoria": "Manutenção Veicular",
+      "local": "Oficina"
+    },
+    {
+      "id": 13,
+      "titulo": "Inspeção do caminhão",
+      "descricao": "Verificar sistema de freios e pneus do caminhão.",
+      "categoria": "Segurança Veicular",
+      "local": "Depósito"
+    },
+    {
+      "id": 14,
+      "titulo": "Avaria no ônibus escolar",
+      "descricao": "Problemas no sistema elétrico do ônibus escolar.",
+      "categoria": "Manutenção",
+      "local": "Oficina"
+    },
+    {
+      "id": 15,
+      "titulo": "Falha no sistema de navegação",
+      "descricao": "Sistema GPS do carro não está funcionando corretamente.",
+      "categoria": "Tecnologia Veicular",
+      "local": "Oficina"
+    },
+    {
+      "id": 16,
+      "titulo": "Vagalume Iluminoso",
+      "descricao": "Um inseto da bunda verde estranho.",
+      "categoria": "Coisa da vida",
+      "local": "Floresta"
+    },
+    {
+      "id": 17,
+      "titulo": "Vagabundo Pilantra",
+      "descricao": "Um bandido de quinta catergoria",
+      "categoria": "Coisa da vida",
+      "local": "Rua"
+    },
+    {
+      "id": 18,
+      "titulo": "Rodivia Asfaltada",
+      "descricao": "Uma matenção de uma rodovia já está asfaltado.",
+      "categoria": "Manutenção",
+      "local": "Rodovia"
+    }
+  ]
+  
