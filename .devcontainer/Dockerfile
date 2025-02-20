@@ -14,13 +14,10 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalar as bibliotecas Python necessárias
-RUN pip install --no-cache-dir \
-    fasttext \
-    spacy \
-    requests
+RUN pip install --no-cache-dir spacy
 
 # Instalar o modelo de linguagem do Spacy para o português
-RUN python -m spacy download pt_core_news_sm
+RUN python -m spacy download pt_core_news_lg
 
 # Definir diretório de trabalho
 WORKDIR /app

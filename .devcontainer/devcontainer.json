@@ -4,6 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "runArgs": ["--rm"],
   "customizations": {
     "vscode": {
       "settings": {
@@ -11,7 +12,5 @@
       },
       "extensions": ["ms-python.python", "ms-azuretools.vscode-docker"]
     }
-  },
-  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
-  "remoteUser": "root"
+  }
 }

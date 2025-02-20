@@ -1,2 +1,8 @@
 /venv
-/.ideia
+.ideia
+*/__pycache__
+*/*/__pycache__
+*.pyc
+pt_core_news_lg/
+build
+dist
