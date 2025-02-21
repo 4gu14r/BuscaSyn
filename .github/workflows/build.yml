@@ -1,0 +1,48 @@
+name: Gerar Executáveis
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+
+    steps:
+      - name: Fazer Checkout do Código
+        uses: actions/checkout@v3
+      
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      
+      - name: Instalar Dependências
+        run: |
+          pip install -r src/requirements.txt
+          python -m spacy download pt_core_news_lg
+          python -m nltk.downloader rslp wordnet omw-1.4
+      
+      - name: Compilar com PyInstaller
+        run: |
+          pyinstaller main.spec
+      
+      - name: Empacotar Executável
+        run: |
+          if [ "${{ matrix.os }}" == "windows-latest" ]; then
+            powershell Compress-Archive -Path dist/semantic_search/* -DestinationPath semantic_search_${{ matrix.os }}.zip
+          else
+            zip -r semantic_search_${{ matrix.os }}.zip dist/semantic_search/
+          fi
+      
+      - name: Enviar Ativo da Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: semantic_search_${{ matrix.os }}.zip
+          asset_name: semantic_search_${{ matrix.os }}.zip
