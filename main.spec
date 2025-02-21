@@ -5,7 +5,11 @@ a = Analysis(
     ['app/main.py'],
     pathex=[],
     binaries=[],
-    datas=[('/usr/local/lib/python3.12/site-packages/pt_core_news_sm/pt_core_news_sm-3.8.0', 'pt_core_news_sm')],
+    datas=[
+        ('./resources/pt_core_news_lg/pt_core_news_lg-3.8.0', 'pt_core_news_lg'),
+        ('./resources/spellchecker/resources/pt.json.gz', 'spellchecker/resources'),
+        ('./resources/nltk_data', 'nltk_data')
+    ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -22,7 +26,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='bs',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
